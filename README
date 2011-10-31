@@ -1,0 +1,33 @@
+Thunderbird
+=======
+
+This module configures Thunderbird for autoconfig.
+Basically, it makes Thunderbird look for a config file at startup, which itself refers to 
+the URI of the actual confif file.
+More info on autoconfig can be found at http://mit.edu/~thunderbird/www/maintainers/autoconfig.html
+
+Note: At the moment we skip Thunderbird install by the standard package resource, because we want to stick
+with 3.1 (for use with SOGo), and the package installs thunderbird-global-menu which leads to a lot of
+unwanted dependencies.
+
+Conventions
+-----------
+
+Dependencies
+------------
+
+Contact
+-------
+
+Bruno Leon <bruno.leon@unyonsys.com>
+
+License
+-------
+
+This software is distributed under the GNU General Public License
+version 2 or any later version. See the LICENSE file for details.
+
+Copyright
+---------
+
+Copyright (C) 2011 UNYONSYS SARL
