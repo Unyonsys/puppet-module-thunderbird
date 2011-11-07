@@ -7,6 +7,7 @@ class thunderbird::install {
   exec { 'install_thunderbird':
     command => 'apt-get --no-install-recommends install thunderbird',
     unless  => 'which thunderbird',
+    require => File[ '/usr/local/bin/thunderbird_postinstall_hook.sh', '/etc/apt/apt.conf.d/99thunderbird' ],
   }
 
   file { '/usr/local/bin/thunderbird_postinstall_hook.sh':
